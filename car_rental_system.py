@@ -17,11 +17,12 @@ def FetchCabs(a,b):
     for j in range(0,5):
         output.append(carlocations[j]);
 
-    for i in output:
-        print(i)
+    return output
 
 x=float(input())
 y=float(input())
 
+closestCabs = FetchCabs(x,y)
 
-FetchCabs(x,y)
+for i in closestCabs:
+    print(i)
